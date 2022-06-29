@@ -1,0 +1,103 @@
+3 estaciones y 1 oficina ppal.
+
+OFICINA PPAL:
+Área de Backbone (area 0).
+Sacar la lan del DNS/HTTP para la Estación Norte.
+
+Conectar R0 con R3 a través de Frame Relay.
+
+ESTACIÓN CENTRAL:
+Área 1.
+Concectar R3 con las demás estaciones por fibra óptica  a los ""R2"" de las otras estaciones.
+
+
+RED DE BOLETERÍA:
+Configurar las impresoras desde la pc de esta red.
+
+
+ESTACIÓN NORTE:
+Área de Backbone (area 0).
+Misma topografía que la CENTRAL pero con la red de Atención al Cliente y Boletería en una misma LAN.
+Colocar el router DR (Así se llama) y conectarlo a R2 a través de una Fastethernet al servidor que antes estaba en la oficina ppal.
+
+
+ESTACIÓN SUR:
+Área 2.
+Misma topografía que la CENTRAL pero con la red de Atención al Cliente y Boletería en una misma LAN.
+
+
+SERVIDORES DE CONTROL:
+Crear las tablas de salidas y llegadas (En una estación no debe tener como destino esa misma estación).
+Configurar la dirección web.
+(El de la oficina ppal deberá tener todo, mientras que el de las estaciones solo lo que le compete).
+
+
+SERVIDORES DE VÍDEO:
+Crear las tablas de reportes.
+Configurar la dirección web.
+(El de la oficina ppal deberá tener todo, mientras que el de las estaciones solo lo que le compete).
+
+
+PUNTOS A DESTACAR:
+Hacer toda la estructura.
+Contar el número de redes y dispositivos.
+Aplicar VLSM.
+Usar OSPF como protocolo de enrutamiento.
+Comprobar comunicación exitosa entre todos los departamentos de todas las estaciones y oficinas.
+Las redes inalámbricas solo podrán acceder al servicio del ISP, y podrán acceder al servidor DNS y HTTP.
+Los R2 serán routers de frontera.
+Configurar el Servidor DNS.
+El servidor DNS debe tener una página web con los viajes de los trenes.
+Configurar el servidor de correo.
+Agregar los correos a todas las pc de las oficinas de control de las 4 estaciones.
+Configurar todos los tlf bajo una codificación de autoría propia.
+
+
+
+Dirección IP Red Base: 192.38.128.0/18
+
+
+
+AGREGAR:
+*Para los switch multilayer:
+1-9 Teléfonos IP
+10-23 PCs e Impresoras
+
+* Al router 6 (de cada estación) se le agegó el componente NM-1FE2W para soportar otra red LAN
+
+* A Boletería en Estación Central se le puso Switch tradicional porque no tiene tlf
+
+* Red de seguridad de la estación central: Router 4 2811, se le agregó componente WIC-1T para conectarlo al Router 2
+
+* A router 7 (de cada estación) se le agregó el componente NM-1FE2W para conectarlo al router 2
+
+* A router 1 se le agregó un componente WIC-1T para conectarlo al frame relay
+
+
+
+PREGUNTAR:
+
+Conexión de Frame Relay qlq, no es con R1 en vez de R0??
+En los switch multilayers estamos reservando los 9 primeros puertos para los teléfonos IP, y podemos poner del 10 en adelante a las PCs
+e impresoras? O deben estar separadas en layers diferentes también?
+
+
+
+
+
+Limpia o completa
+Limpia: cámara y lo demás lo agarran del carro.
+Completa: cámara, con válvulas, taquetes y todo lo demás para montarlo.
+
+
+
+
+
+
+
+
+
+
+
+
+
