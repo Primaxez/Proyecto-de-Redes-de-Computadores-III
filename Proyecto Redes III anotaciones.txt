@@ -73,6 +73,8 @@ AGREGAR:
 
 * A router 1 se le agregó un componente WIC-1T para conectarlo al frame relay
 
+* Al router 2 de la estación central se le agregó el componente NM-1FE-FX para soportar conexión de fibra óptica con R3.
+
 
 
 PREGUNTAR:
@@ -88,6 +90,68 @@ e impresoras? O deben estar separadas en layers diferentes también?
 Limpia o completa
 Limpia: cámara y lo demás lo agarran del carro.
 Completa: cámara, con válvulas, taquetes y todo lo demás para montarlo.
+
+
+
+REDES:
+
+OFICINA PRINCIPAL (2 + 3 = 5 redes)
+* 11 host (Control Central)
+* 4 host (Granja de Servidores)
+* 2 host (R0-R1)
+* 2 host (ISP)
+* 2 host (R1-R3 Frame Relay)
+	
+
+
+EC (6 + 4 = 10 redes):
+* 7 host (Boletería)
+* 6 host (Atención al Cliente)
+* 8 host (Control de Trenes)
+* 3 host (Granja de Servidores)
+* 8 host (Seguridad)
+* 231 host (Red Inalámbrica)
+* 2 host (R2-R7)
+* 2 host (R2-R4)
+* 2 host (R2-R6)
+* 2 host (R2-R3)
+
+
+
+EN (6 + 5 = 11 redes):
+* 231 host (Red Inalámbrica)
+* 2 host (Servidor DNS/HTTP)
+* 12 host (Boletería y Atención al Cliente)
+* 8 host (Control de Trenes)
+* 3 host (Granja de Servidores)
+* 8 host (Seguridad)
+* 2 host (R2-R7)
+* 2 host (R2-R4)
+* 2 host (R2-R6)
+* 2 host (R2-R3)
+* 2 host (R2-RD)
+
+
+
+ES (5 + 4 = 9 redes):
+* 231 host (Red Inalámbrica)
+* 12 host (Boletería y Atención al Cliente)
+* 8 host (Control de Trenes)
+* 3 host (Granja de Servidores)
+* 8 host (Seguridad)
+2 host (R2-R7)
+2 host (R2-R4)
+2 host (R2-R6)
+2 host (R2-R3)
+
+
+TOTAL 35 REDES
+	
+
+
+
+
+
 
 
 
